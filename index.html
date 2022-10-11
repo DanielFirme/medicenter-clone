@@ -52,15 +52,20 @@
 <body>
 <header>
 <div class="container">
-    <div class="logo home">
+    <div class="logo home closed">
         <a href=""><img src="assets/images/logo.png"/></a>
     </div>
     <div class="menu">
         <nav>
-            <div id="mMobile" class="menuMobile" onclick="menuMobile();">
-                <div class="mm_line"></div>
-                <div class="mm_line"></div>
-                <div class="mm_line"></div>
+            <div class="menuMobileWithLogo">
+                <div class="logo home">
+                    <a href=""><img src="assets/images/logo.png"/></a>
+                </div>
+                <div id="mMobile" class="position menuMobile " onclick="menuMobile();">
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                </div>  
             </div>
             <ul class="menuMobileClosed">
                 <li class="active"><a href="">HOME</a></li>

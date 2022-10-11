@@ -496,7 +496,7 @@ footer .contact {
 }
 
 .menuMobile {
-    display:none;
+    display:flex;
     width:40px;
     height:40px;
     margin-top:40px;
@@ -507,6 +507,10 @@ footer .contact {
 .mm_line {
     height:3px;
     background-color:#39aae1;
+}
+
+.menuMobileWithLogo {
+    display: none;
 }
 
 @media only screen and (max-width:600px) {
@@ -561,20 +565,40 @@ footer .contact {
     }
 
     .menuMobileOpened {
-        height: 288px;
+        margin-top: 0;
     }
 
     .menuMobileClosed {
-        height: 0px;
+        margin-top: -288px;
+    }
+
+    .menuMobileWithLogo {
+        background-color:#FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        z-index: 99;
+    }
+
+    .menu {
+        width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     nav ul {
         flex-direction:column;
-        position:absolute;
+        position:relative;
         left:0;
         width:100%;
         background-color:#FFFFFF;
-        transition: height ease 0.3s;
+        transition: all ease 0.3s;
+        z-index: 98;
         overflow: hidden;
 
     }
@@ -592,5 +616,9 @@ footer .contact {
         display:flex;
         flex-direction:column;
         justify-content:space-around;
+    }
+
+    .closed {
+        display: none;
     }
 }

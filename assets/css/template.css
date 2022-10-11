@@ -594,13 +594,12 @@ footer .contact {
     nav ul {
         flex-direction:column;
         position:relative;
-        left:0;
         width:100%;
         background-color:#FFFFFF;
         transition: all ease 0.3s;
         z-index: 98;
         overflow: hidden;
-
+        
     }
 
     header {
